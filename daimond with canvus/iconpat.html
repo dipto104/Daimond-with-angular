@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html  ng-app="demo">
+<head >
+	<title>Angular Js Demo app</title>
+	<script src="Scripts/angular.min.js"> </script>
+	
+	
+	<style>
+		.row{
+			display:inline-block; /* to make sure rows' stars appear next to each other */
+			}
+			
+		.row2{	
+			display:inline-block;
+			
+			  
+		}
+	</style>
+	
+
+</head>
+
+<body>
+	
+	<div ng-app="demo">
+  <div class="flex-control-nav" ng-controller="testCtrl">
+     <input class="form-control" type="number" ng-model="givenNumber" ng-change="printStars()">
+     <!--<div ng-repeat="x in rows">
+        <div ng-repeat="y in x"  class="row">
+          <h1 class="fa fa-star"  ></h1>
+        </div>
+     </div>
+
+	 
+	 <div ng-repeat="x in rows2" class="row2">
+        <div ng-repeat="y in x"  >
+          <h1 class="fa fa-star"  ></h1>
+        </div>
+     </div>-->
+     <div>
+     	<canvas id="myCanvas" width="1920" height="1080" style="border:1px solid #d3d3d3;">
+		Your browser does not support the HTML5 canvas tag.</canvas>
+     </div>
+      
+  </div>
+ 
+ 
+</div>
+
+
+	
+	
+	
+
+</body>
+
+<script src="canvasangular.js"> </script>
+
+
+</html>
